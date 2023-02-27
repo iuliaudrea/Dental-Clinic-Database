@@ -1,0 +1,16 @@
+{
+  "name": "dental-clinic",
+  "version": "1.0.0",
+  "description": "crud pe baza de date a unei clinici dentare",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Iulia Udrea",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1"
+  }
+}
