@@ -1,0 +1,27 @@
+<form action="<%= locals.action %>" id="editare"  method="post" class="formular">
+    <%
+    let keys  = Object.keys(locals.valori[0]);
+    let values = Object.values(locals.valori[0]);
+    for(let i = 0; i < locals.coloane.length; i++){
+        let tip;
+        let cheie = keys[i];
+        let val = values[i];
+
+        if(typeof val == 'number' || cheie.includes("id")) tip = 'number';
+            else if(typeof val == 'object') tip = 'date';
+            else if(cheie.includes('email')) tip = 'email';
+            else if(cheie.includes('data')) tip = 'date';
+            else tip = 'text'%>
+
+        <label>
+            <%-locals.coloane[i]%>
+            <% if(i==0 && locals.action.includes("editare")) {%>
+            <input type="<%-tip%>" name="<%- cheie%>" class="form-control" >
+            <% } else { %>
+            <input type="<%-tip%>" name="<%- cheie%>" class="form-control">
+            <% } %>
+        </label>
+    <% } %>
+
+    <input class="btn btn-primary" type="submit" value="Trimite">
+</form>

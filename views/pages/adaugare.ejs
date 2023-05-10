@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%-locals.titlu.split("_").join(" ")%></title>
+    <%- include("../fragments/head") %>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <%- include("../fragments/header") %>
+
+    <div class="continut">
+        <h2><%-`Adăugare înregistrare`%></h2>
+        <h3><%-locals.titlu.split("_").join(" ")%></h3>
+        <div class="container-form">
+            <%- include("../fragments/formular", {action: `/inreg/${titlu.toLowerCase()}`}); %>
+        </div>
+    </div>
+    
+    <%- include("../fragments/footer") %>
+</body>
+</html>

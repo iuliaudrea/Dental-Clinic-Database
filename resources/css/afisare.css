@@ -1,0 +1,51 @@
+.formular label{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.formular label input{
+    width: 200px;
+}
+
+.container-form {
+    width: 500px;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.container-form input {
+    margin-bottom: 1rem;
+}
+
+nav a.navbar-brand{
+    margin-left: 1rem;
+}
+
+.continut{
+    margin-top: 5rem;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+h3{
+    margin-bottom: 1rem;
+}
+
+table.table {
+    width: 80%;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+div.offcanvas{
+    width: 50% !important;
+    height: 80vh;
+    position: fixed;
+    margin-top: 10vh;
+    margin-left: 25%;
+}
